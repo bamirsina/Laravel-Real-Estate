@@ -1,0 +1,100 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    border: 2px solid #ccc;
+    border-radius: 20px;
+    overflow: hidden;
+    width: 600px;
+    margin: 20px auto;
+}
+.description-section {
+    display: flex;
+    flex: 1;
+    padding: 20px;
+    background-color: #f9f9f9;
+}
+.description {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.row {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+.text-content {
+    display: flex;
+    align-items: center;
+}
+.text-content h4 {
+    margin: 0 10px 0 0;
+    white-space: nowrap;
+}
+.text-content p {
+    margin: 0;
+}
+.image {
+    flex: 1;
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.image img {
+    max-width: 2000px;
+    max-height: 100%;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+.map {
+    flex: 1;
+    padding: 20px;
+}
+.map iframe {
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+    border: 0;
+}
+
+/* Stilizimi për pajisjet mobile */
+@media (max-width: 768px) {
+    .container {
+        display: flex;
+        flex-direction: column;
+        border: 2px solid #ccc;
+        border-radius: 20px;
+        overflow: hidden;
+        margin: 20px auto;
+    }
+
+    .description-section {
+        margin-left: 0; /* Fshij marginën e majtë */
+        padding: 10px; /* Zvogëlo padding-un për të shkurtuar hapësirat */
+    }
+
+    .image {
+        margin-top: 200%;
+        margin-left: -220px;
+
+    }
+
+    .image img {
+        margin-top: 20px;
+        height: 10px;
+        width: 10px;
+    }
+
+    .text-content h4 {
+        margin-bottom: 5px; /* Zvogëlo hapësirën poshtë titujve */
+    }
+
+    .map {
+        margin-top: 20px; /* Zvogëlo margin-in lart për map-in */
+    }
+}
+
